@@ -4,6 +4,10 @@ def selection_sort( arr ):
     for i in range(0, len(arr) - 1):
         cur_index = i
         smallest_index = cur_index
+        for e in range(cur_index+1, len(arr)):
+            if arr[cur_index] > arr[e]:
+                cur_index = e
+        arr[smallest_index], arr[cur_index] = arr[cur_index],arr[smallest_index]
         # TO-DO: find next smallest element
         # (hint, can do in 3 loc) 
              
