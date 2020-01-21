@@ -38,7 +38,7 @@ def merge_sort(arr):
         # recursion of middle of each divided array until size of 1
         left = merge_sort(lefthalf)
         right = merge_sort(righthalf)
-        # Now compare the each of divided groups
+        # Now compare  each of the divided groups
         arr = merge(left, right)
     return arr
 
